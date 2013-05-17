@@ -1,3 +1,10 @@
 p {
-    text-align: center;
+    text-align: left;
+    margin: 25px;
+    
+}
+li {
+    text-align:left;
+    margin: 10px;
+    margin-left: 25px;
 }
