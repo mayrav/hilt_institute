@@ -1,3 +1,18 @@
-p {
-    text-align: center;
+div#calendar {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+div#calendar iframe {
+    border: 0;
+    width: 800px;
+    height: 600px;
+}
+div#calendar iframe .veiw-cap {
+    color: purple;
+}
+div#calendar iframe .veiw-container-border {
+    color: purple;
 }
