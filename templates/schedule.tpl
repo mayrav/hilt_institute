@@ -16,7 +16,7 @@
 <tr><th>8:55-9:45</th></tr>
 </table>
 </th>
-<td>Math Foundations &amp; Pre-Algebra</td>
+<td class="first-column-style">Math Foundations &amp; Pre-Algebra</td>
 <td>
 <table>
 <tr>
@@ -32,7 +32,7 @@
 </tr>
 </table>
 </td>
-<td>English 10 HILTEX and English 11 Vogel Room 212</td>
+<td class="first-column-style">English 10 HILTEX and English 11 Vogel Room 212</td>
 </tr>
 <tr>
 <th>9:50-10:40</th>
@@ -44,8 +44,8 @@
 </tr>
 </table>
 </td>
-<td>HILT B Science Vogel (212) Class ends 11:10 am</td>
-<td>HILTEX Biology Alexander Room 236</td>
+<td class="first-column-style">HILT B Science Vogel (212) Class ends 11:10 am</td>
+<td class="first-column-style">HILTEX Biology Alexander Room 236</td>
 <td>
 <table>
 <tr>
@@ -96,18 +96,17 @@
 </tr>
 <tr>
 <th>1:25-2:15</th>
-<td>HILT A English Kinnard Room 209</td>
-<td>HILT B English Vogel Room 212</td>
-<td>CTE</td>
-<td>CTE</td>
+<td class="first-column-style">HILT A English Kinnard Room 209</td>
+<td class="first-column-style">HILT B English Vogel Room 212</td>
+<td class="first-column-style">CTE</td>
+<td class="first-column-style">CTE</td>
 </tr>
 <tr>
 <th>2:20-3:10</th>
-<td>HITL A Reading Kinnard Room 209</td>
-<td>HILT B Reading Vogel Room 212</td>
-<td>CTE</td>
-<td>CTE</td>
-</tr>
-</table>
+<td class="first-column-style">HITL A Reading Kinnard Room 209</td>
+<td class="first-column-style">HILT B Reading Vogel Room 212</td>
+<td class="first-column-style">CTE</td>
+<td class="first-column-style">CTE</td>
+</tr></table>
 
 %rebase templates/layout.tpl title='HILT Institute Schedule', addstyles=['schedule.css']
