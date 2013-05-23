@@ -13,4 +13,4 @@
   <li><a href="staff/vogel">Ms. Vogel</a>, English</li>
   <li><a href="staff/zawolo">Mr. Zawolo</a>, Math</li>
 </ul>
-%rebase templates/layout.tpl title='HILT Institute Staff Directory', addstyles=['staff.css']
+%rebase templates/layout.tpl title='HILT Institute Staff Directory', addstyles=['staff'], scripts=None

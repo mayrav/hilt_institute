@@ -3,4 +3,4 @@
   <li>Need additional time to complete high school.</li>
   <li>And or are interested in career and technical education.</li>
 
-%rebase templates/layout.tpl title='HILT Institute About Us', addstyles=['about.css']
+%rebase templates/layout.tpl title='HILT Institute About Us', addstyles=['about'], scripts=None

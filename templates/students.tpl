@@ -205,4 +205,4 @@
 </td>
 <td></td>
 </table>
-%rebase templates/layout.tpl title='HILT Institute Student Awards', addstyles=['students.css']
+%rebase templates/layout.tpl title='HILT Institute Student Awards', addstyles=['students'], scripts=None
