@@ -23,7 +23,12 @@ table,td,th {
     width: 163px;
     margin-left: auto;
     margin-right: auto;
+<<<<<<< HEAD
     background-color: #E1DFE1;
+=======
+    padding:5px;
+    background: #B964D4
+>>>>>>> 2bdec5023bf84d1dedddbad5527165f6f4e47a91
 }
 ol,li {
     list-style-type: none;

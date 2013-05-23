@@ -1,5 +1,6 @@
 <table class="schedule">
 <thead>
+<table id="awardstable" border="5">
 <tr>
 <th></th>
 <th>First Quarter</th>
