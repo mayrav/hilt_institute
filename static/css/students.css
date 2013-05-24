@@ -15,7 +15,6 @@ table.schedule  {
     border:1px solid #93CE37;
     background-color: #BCA9F5;
 }
-
 table,td,th {
     padding: 1px;
     border: 1px solid black;
@@ -23,8 +22,8 @@ table,td,th {
     width: 163px;
     margin-left: auto;
     margin-right: auto;
-    padding:5px;
-    background: #B964D4
+    padding:1px;
+    background: #E1DFE1;
 }
 ol,li {
     list-style-type: none;
