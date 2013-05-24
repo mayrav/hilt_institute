@@ -5,7 +5,7 @@ valuable career and technical skills.  This web site was made by students in
 our program.
 </p>
 
-<div class="subsection">
+<div id="left_panel">
   <h1>HILT Institute offers:</h1>
 
   <ul>
@@ -20,15 +20,17 @@ our program.
   </ul>
 </div>
 
+<div id="right_panel">
 <ul class="slideshow">
   <li class="show"><img src="/static/slides/electricity.jpg"
-  width="400" height="300" title="" alt="Electricity Class"></li>
+  width="600" height="450" title="" alt="Electricity Class"></li>
 
   <li><img src="/static/slides/student_government.jpg"
-  width="400" height="300" title="" alt="Student Government"></li>
+  width="600" height="450" title="" alt="Student Government"></li>
 
   <li><img src="/static/slides/yesenia_y_cindy.jpg"
-  width="400" height="300" title="" alt="Yesensia y Cindy"></li>
+  width="600" height="450" title="" alt="Yesenia y Cindy"></li>
 </ul>
+</div>
 
 %rebase templates/layout.tpl title='HILT Institute Home Page', addstyles=['index', 'slideshow'], scripts=['jquery-2.0.0.min', 'slideshow', 'startslides']

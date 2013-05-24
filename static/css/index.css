@@ -4,15 +4,22 @@ p#mission {
     border: 1px solid #000;
     font-size: large;
 }
-div.subsection {
+div#left_panel {
+    float: left;
     margin: 30px;
     padding: 20px;
     border: 1px dotted #777;
     width: 400px;
 }
-div.subsection ul {
+div#left_panel ul {
     list-style-type: none;
 }
-div.subsection li {
+div#left_panel li {
     margin-top: 5px;
+}
+div#right_panel {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
