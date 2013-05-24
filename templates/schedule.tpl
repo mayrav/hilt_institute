@@ -109,4 +109,4 @@
 <td>CTE</td>
 </tr></table>
 
-%rebase templates/layout.tpl title='HILT Institute Schedule', addstyles=['schedule.css']
+%rebase templates/layout.tpl title='HILT Institute Schedule', addstyles=['schedule'], scripts=None

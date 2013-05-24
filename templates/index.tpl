@@ -19,4 +19,16 @@ our program.
     <li>Field trips and group activities</li>
   </ul>
 </div>
-%rebase templates/layout.tpl title='HILT Institute Home Page', addstyles=['index.css']
+
+<ul class="slideshow">
+  <li class="show"><img src="/static/slides/electricity.jpg"
+  width="400" height="300" title="" alt="Electricity Class"></li>
+
+  <li><img src="/static/slides/student_government.jpg"
+  width="400" height="300" title="" alt="Student Government"></li>
+
+  <li><img src="/static/slides/yesenia_y_cindy.jpg"
+  width="400" height="300" title="" alt="Yesensia y Cindy"></li>
+</ul>
+
+%rebase templates/layout.tpl title='HILT Institute Home Page', addstyles=['index', 'slideshow'], scripts=['jquery-2.0.0.min', 'slideshow', 'startslides']

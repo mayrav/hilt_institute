@@ -4,4 +4,4 @@
 <img src="/static/images/people/{{name}}.jpg" alt="{{full_name}}">
 {{description}}
 </p>
-%rebase templates/layout.tpl title=get('full_name'), addstyles=['person.css']
+%rebase templates/layout.tpl title=get('full_name'), addstyles=['person'], scripts=None

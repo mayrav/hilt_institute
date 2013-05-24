@@ -6,9 +6,12 @@
 <style type="text/css">
 @import url(/static/css/main.css);
 %for stylesheet in addstyles:
-@import url(/static/css/{{stylesheet}});
+@import url(/static/css/{{stylesheet}}.css);
 %end
 </style>
+%if scripts:
+%include templates/scripts.tpl scripts=scripts
+%end
 </head>
 
 <body>

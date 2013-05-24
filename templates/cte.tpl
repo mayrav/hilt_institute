@@ -26,4 +26,4 @@
     <li>Web Computer Graphics</li>
   </ul>
 </div>
-%rebase templates/layout.tpl title='HILT Institute CTE Classes', addstyles=['cte.css']
+%rebase templates/layout.tpl title='HILT Institute CTE Classes', addstyles=['cte'], scripts=None
