@@ -30,7 +30,13 @@ our program.
 
   <li><img src="/static/slides/yesenia_y_cindy.jpg"
   width="600" height="450" title="" alt="Yesenia y Cindy"></li>
-</ul>
-</div>
 
+  <li><img src="/static/slides/award.jpg"
+    width="600" height="450" title="" alt="Geovanny Getting An Award"></li>
+
+  <li><img src="/static/slides/ROTC.jpg"
+   width="600" height="450" title="" alt="ROTC Class"></li>
+</ul>
+</div>   
+   
 %rebase templates/layout.tpl title='HILT Institute Home Page', addstyles=['index', 'slideshow'], scripts=['jquery-2.0.0.min', 'slideshow', 'startslides']
