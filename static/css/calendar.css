@@ -10,9 +10,17 @@ div#calendar iframe {
     width: 800px;
     height: 600px;
 }
-div#calendar iframe .veiw-cap {
+div#calendar iframe .view-cap {
     color: purple;
 }
-div#calendar iframe .veiw-container-border {
+div#calendar iframe .view-container-border {
     color: purple;
+}
+div#caldendar iframe .st-bg {
+   background: #555;
+}
+div#calendar iframe .st-bg-today {
+	background: yellow;
+	border-left: 1px solid yellow;
+	border-right: 1px solid yellow;
 }
