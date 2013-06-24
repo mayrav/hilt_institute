@@ -3,6 +3,8 @@ import sys
 import pickle
 import argparse
 from bottle import route, run, template, static_file
+
+# get current location, set as current location, and append to path
 current_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(current_dir)
 sys.path.append(current_dir)
