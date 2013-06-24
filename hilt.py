@@ -4,6 +4,7 @@ import pickle
 import argparse
 from bottle import route, run, template, static_file
 
+
 # get current location, set as current location, and append to path
 current_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(current_dir)
@@ -98,4 +99,4 @@ def get_port():
 
 
 if __name__ == "__main__":
-    run(host="0.0.0.0", port=get_port())
+    run(host="0.0.0.0", port=get_port(), reloader='True', debug='True')
