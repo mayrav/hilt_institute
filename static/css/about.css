@@ -1,10 +1,20 @@
-p {
-    text-align: left;
+p { 
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.5em;   
     margin: 25px;
-    
+    margin-top: 40px;
 }
 li {
-    text-align:left;
     margin: 10px;
-    margin-left: 25px;
+    margin-left: 90px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.3em;
+}
+section{
+    min-height: 455px;
+    border: 1px solid #808080;
+}
+
+footer{
+    
 }
