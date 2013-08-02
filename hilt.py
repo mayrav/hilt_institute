@@ -1,11 +1,22 @@
-import os, pickle, argparse
+import os
+import sys
+import pickle
+import sqlite3
+import argparse
 from bottle import route, run, template, static_file
 
 
-@route('/static/<filepath:path>')
-def server_static(filepath):
-    static_path = os.getcwd() + '/static/'
-    return static_file(filepath, root=static_path)
+# get current location, set as current location, and append to path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(current_dir)
+sys.path.append(current_dir)
+
+cur = sqlite3.connect("staff.db").cursor()
+
+
+@route('/static/<filename:path>')
+def server_static(filename):
+    return static_file(filename, root=os.path.join(current_dir, "static"))
 
 
 @route('/')
@@ -26,11 +37,21 @@ def schedule():
 @route('/staff')
 @route('/staff/<name>')
 def staff(name=None):
-    staff_dict = pickle.load(open('data/staff_info.dat', 'rb'))
-
+    staff_dir = cur.execute("select * from staff_info").fetchall()
+    staff_names = []
+    for staff_name in staff_dir:
+        staff_names.append(staff_name[0])
     if not name:
         return template('templates/staffdir.tpl')
-    elif name not in staff_dict:
+    elif name in staff_names:
+        for staff in staff_dir:
+            if name == staff[0]:
+                staff_tuple = staff
+                return template('templates/staffmember.tpl', name=name,
+                                full_name=staff_tuple[1],
+                                position=staff_tuple[2],
+                                description=staff_tuple[3])
+    else:
         name = 'frankenstein'
         full_name = 'Mr. Monster Frankenstein'
         position = 'Lead Disciplinarian'
@@ -43,12 +64,6 @@ hobbies include cooking, knitting, and grave robbing.
         return template('templates/staffmember.tpl', name=name,
                         full_name=full_name, position=position,
                         description=description)
-    else:
-        return template('templates/staffmember.tpl', name=name,
-                        full_name=staff_dict[name]['full_name'],
-                        position=staff_dict[name]['position'],
-                        description=staff_dict[name]['description'])
-
 
 @route('/students')
 def students():
@@ -83,12 +98,12 @@ def contact():
 def get_port():
     description = 'A bottle server for the HILT Institute'
     parser = argparse.ArgumentParser(description)
-    parser.add_argument('-p','--port', type=int,
-                         help="The port number the server will run on")
+    parser.add_argument('-p', '--port', type=int,
+                        help="The port number the server will run on")
     args = parser.parse_args()
 
     return args.port if args.port else 8080
 
 
-
-run(host='0.0.0.0', port=get_port())
+if __name__ == "__main__":
+    run(host="0.0.0.0", port=get_port(), reloader='True', debug='True')

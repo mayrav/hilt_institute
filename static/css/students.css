@@ -9,24 +9,26 @@ table.schedule  {
     border-collapse: inherit;
     margin-top: 40px; 
 }
-.schedule thead th{
+.schedule thead th,td {
     padding:1px;
     color: black;
     border:1px solid #93CE37;
+  /* border-bottom:3px solid #9ED929;*/
     background-color: #BCA9F5;
 }
-
-table,td,th {
-    padding: 1px;
-    border: 1px solid black;
-    height: 20px;
+table,th,tr,td {
+    padding: 2px;
+    border: 2px solid black;
+    height: 24px;
     width: 163px;
     margin-left: auto;
     margin-right: auto;
-    padding:5px;
-    background: #B964D4
+    padding:1px;
+    text-align: center;
+    background-color: #E1DFE1;
 }
 ol,li {
+    text-align: left;
     list-style-type: none;
 }
 footer {
@@ -37,3 +39,7 @@ footer {
 section {
    border: 0px;
 }
+
+
+
+
