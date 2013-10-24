@@ -33,6 +33,9 @@ def about():
 def schedule():
     return template('templates/schedule.tpl')
 
+@route('/grammer')
+def schedule():
+    return template('templates/grammer.tpl')
 
 @route('/staff')
 @route('/staff/<name>')

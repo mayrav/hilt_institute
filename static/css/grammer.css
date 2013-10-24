@@ -1,0 +1,23 @@
+body {
+    background-color: white;
+
+}
+div {
+    margin: 30px;
+}
+h1, h2{
+     
+    text-align: center;
+    color: #2F4F4F;
+    font-family: message-box;
+}
+div{
+     margin: 42px; 
+     background-color: #b397e1;
+     outline-color: #9955bb;
+     outline-style: outset;
+     padding: 18px;
+     float: inherit;
+     width: -moz-max-content;
+
+ }   

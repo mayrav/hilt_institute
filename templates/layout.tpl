@@ -31,6 +31,7 @@
 <a href='/activities'>Activities</a>
 <a href='/calendar'>Calendar</a>
 <a href='/contact'>Contact</a>
+<a href='/grammer'>Grammer Test</a>
 </nav>
 </header>
 

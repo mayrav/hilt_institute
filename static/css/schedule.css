@@ -13,6 +13,8 @@ table.schedule  {
     color: black;
     border:1px solid black;
     background-color: #BCA9F5;
+    outline-color: #800080;
+    outline-style: outset;
 }
 
 table,td,th {
@@ -24,6 +26,7 @@ table,td,th {
     margin-right: auto;
     background-color: #E1DFE1;
     text-align: center;
+    outline: medium outset #EE82EE;
 }
 
 table table td, table table tr{
